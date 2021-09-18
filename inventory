@@ -1,8 +1,10 @@
-[CM-SERVER]
+[CmServer]
 13.229.228.152  ansible_user=ec2-user
-[TESTING-SERVER]
+[TestingServer]
 18.141.182.233  ansible_user=ec2-user
-[APPS]
-ansible_ssh_private_key_file: secrets/riki-ami-2.pem
+[Apps]
 3.0.145.50      ansible_user=ec2-user
 52.77.247.172   ansible_user=ec2-user
+[Apps]
+ansible_user=ec2-user
+ansible_ssh_private_key_file=secrets/riki-ami-2.pem
