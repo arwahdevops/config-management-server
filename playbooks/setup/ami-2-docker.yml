@@ -1,16 +1,8 @@
 ---
 - hosts: Apps
-  become: true
+  sudo: true
 
   tasks:
     - name: Install Docker
-      command: sudo amazon-linux-extras install docker
-    - name: Enable Docker Service
-      command: sudo service docker start
-    - name: Usermod
-      command: usermod -a -G docker ec2-user
-    - name: Install latest Docker Compose
-      command: sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
-    - name: CHMOD docker compose
-      command: sudo chmod +x /usr/local/bin/docker-compose
+      script: scripts/ami-2-docker.sh
     

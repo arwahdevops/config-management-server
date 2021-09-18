@@ -1,5 +1,5 @@
 # rikipermana@live.com
-name: Deploy Production
+name: Server Provisioning
 
 on:
   push:
