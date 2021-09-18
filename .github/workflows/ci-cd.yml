@@ -35,4 +35,4 @@ jobs:
         port: 22
         script: |
           cd ~/config-management-server
-          ls -la
+          ansible-playbook -i inventory playbooks/setup/ami-2-docker.yml --ask-become-pass -b
