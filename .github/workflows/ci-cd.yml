@@ -15,7 +15,7 @@ jobs:
       with:
         switches: -avzr --delete
         path: ./
-        remote_path: ~/devops-test
+        remote_path: ~/config-management-server
         remote_host: ${{ secrets.HOST }}
         remote_port: 22
         remote_user: ${{ secrets.USERNAME }}
@@ -26,7 +26,7 @@ jobs:
     needs: [setup-ansible]
     steps:
     - uses: actions/checkout@v2
-    - name: Deploy Container
+    - name: Run Ansible
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.HOST }}
