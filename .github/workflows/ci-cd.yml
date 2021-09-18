@@ -35,4 +35,4 @@ jobs:
         port: 22
         script: |
           cd ~/config-management-server
-          ansible-playbook -i inventory playbooks/setup/add-key.yml --user
+          ansible-playbook -i inventory playbooks/setup/add-key.yml
