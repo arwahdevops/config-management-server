@@ -4,5 +4,5 @@
 
   tasks:
     - name: Install Docker
-      script: scripts/ami-2-docker.sh
+      script: /home/ec2-user/config-management-server/scripts/ami-2-docker.sh
     
