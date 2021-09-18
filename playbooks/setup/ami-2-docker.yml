@@ -3,8 +3,6 @@
   become: true
 
   tasks:
-    - name: Update
-      command: sudo yum update -y
     - name: Install Docker
       command: sudo amazon-linux-extras install docker
     - name: Enable Docker Service
