@@ -35,4 +35,4 @@ jobs:
         port: 22
         script: |
           cd ~/config-management-server
-          ansible-playbook -i inventory playbooks/setup/touch.yml
+          ansible-playbook -i inventory playbooks/deploy/touch.yml
