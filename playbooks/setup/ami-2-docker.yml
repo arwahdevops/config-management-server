@@ -1,6 +1,6 @@
 ---
 - hosts: Apps
-  become: true
+  sudo: yes
 
   tasks:
     - name: Install Docker
