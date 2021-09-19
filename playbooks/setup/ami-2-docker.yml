@@ -1,7 +1,0 @@
----
-- hosts: Apps
-  tasks:
-    - name: Install Docker
-      become: true
-      command: ls -la
-#    
