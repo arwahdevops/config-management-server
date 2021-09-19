@@ -1,8 +1,7 @@
 ---
 - hosts: Apps
-  sudo: yes
-
   tasks:
     - name: Install Docker
-      script: /home/ec2-user/config-management-server/scripts/ami-2-docker.sh
+      become: true
+      command: ls -la
 #    
