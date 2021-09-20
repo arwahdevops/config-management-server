@@ -1,0 +1,11 @@
+---
+- hosts: Apps
+  tasks:
+    - name: Synchronize Code
+      become: true
+      synchronize:
+      src: ~/source/helloworld
+      dest: ~/test/helloword
+      rsync_opts:
+        - "--no-motd"
+        - "--exclude=.git"   
