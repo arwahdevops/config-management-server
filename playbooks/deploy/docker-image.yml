@@ -9,6 +9,5 @@
         src: ~/source/helloword
         dest: ~/deploy/
         rsync_opts:
-        - "--no-motd"
         - "--exclude=.git"
       register: sync
