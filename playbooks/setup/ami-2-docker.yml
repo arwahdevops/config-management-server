@@ -12,7 +12,7 @@
       command: sudo chkconfig docker on
     - name: Install or upgrade docker-compose
       get_url: 
-        url : "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)"
+        url : "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)"
         dest: /usr/local/bin/docker-compose
         mode: 'a+x'
         force: yes
