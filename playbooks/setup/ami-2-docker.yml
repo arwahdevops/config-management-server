@@ -1,7 +1,5 @@
 ---
 - hosts: Apps
-  args:
-      warn: false
   tasks:
     - name: Install Docker
       become: true
