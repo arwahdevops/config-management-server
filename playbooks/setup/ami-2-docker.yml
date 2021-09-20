@@ -11,4 +11,4 @@
     - name: Enable Docker Service
       command: sudo chkconfig docker on
     - name: Install or upgrade docker-compose
-      scipt: ~/config-management-server/docker-compose.sh
+      script: ~/config-management-server/docker-compose.sh
