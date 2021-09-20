@@ -3,4 +3,14 @@
   tasks:
     - name: Install Docker
       become: true
-      command: sudo amazon-linux-extras install docker -y  
+      command: sudo amazon-linux-extras install docker -y
+    - name: Start Docker
+      command: sudo service docker start
+    - name: Usermod
+      command: sudo usermod -a -G docker ec2-user
+    - name: Enable Docker Service
+      command: sudo chkconfig docker on
+    - name: Install Docker Compose
+      command: sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+    - name: chmod docker compose
+      command: sudo chmod +x /usr/local/bin/docker-compose
