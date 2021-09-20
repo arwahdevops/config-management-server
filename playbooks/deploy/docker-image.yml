@@ -6,7 +6,7 @@
       synchronize:
         archive: yes
         compress: yes
-        src: /source/helloword
-        dest: /test/helloword
+        src: ~/source/helloword
+        dest: ~/test/helloword
       delegate_to: Apps
       register: sync
