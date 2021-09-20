@@ -10,7 +10,9 @@
       command: sudo usermod -a -G docker ec2-user
     - name: Enable Docker Service
       command: sudo chkconfig docker on
-    - name: Install Docker Compose
-      command: sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-    - name: chmod docker compose
-      command: sudo chmod +x /usr/local/bin/docker-compose
+    - name: Install or upgrade docker-compose
+      get_url: 
+        url : "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)"
+        dest: /usr/local/bin/docker-compose
+        mode: 'a+x'
+        force: yes
