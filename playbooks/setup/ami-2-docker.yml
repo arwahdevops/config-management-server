@@ -11,8 +11,4 @@
     - name: Enable Docker Service
       command: sudo chkconfig docker on
     - name: Install or upgrade docker-compose
-      get_url: 
-        url : "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)"
-        dest: /usr/local/bin/docker-compose
-        mode: 'a+x'
-        force: yes
+      scipt: ~/config-management-server/docker-compose.sh
