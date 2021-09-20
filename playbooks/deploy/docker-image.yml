@@ -8,5 +8,4 @@
         compress: yes
         src: ~/source/helloword
         dest: ~/test/helloword
-      delegate_to: Apps
       register: sync
