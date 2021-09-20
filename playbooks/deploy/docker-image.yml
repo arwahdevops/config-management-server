@@ -7,5 +7,5 @@
         archive: yes
         compress: yes
         src: ~/source/helloword
-        dest: ~/test/helloword
+        dest: ~/deploy/
       register: sync
