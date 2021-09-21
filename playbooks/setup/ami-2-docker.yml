@@ -1,5 +1,5 @@
 ---
-- hosts: Apps
+- hosts: all
   tasks:
     - name: Install Docker
       become: true
