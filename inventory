@@ -1,7 +1,11 @@
+[Monitoring]
+13.213.31.158   ansible_user=ec2-user
 [CmServer]
-18.140.63.162  ansible_user=ec2-user
+18.140.63.162   ansible_user=ec2-user
 [TestingServer]
 18.141.182.233  ansible_user=ec2-user
 [Apps]
-3.0.92.67      ansible_user=ec2-user
+3.0.92.67       ansible_user=ec2-user
 54.169.153.12   ansible_user=ec2-user
+[Loadbalancer]
+54.179.176.43   ansible_user=ec2-user
