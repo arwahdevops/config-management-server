@@ -14,4 +14,4 @@
 
     - name: Deploy APP
       become: true
-      command: cd ~/source/fast-api-test && docker-compose up --build -d
+      command: cd ~/deploy/fast-api-test && docker-compose up --build -d
