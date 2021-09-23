@@ -6,7 +6,7 @@
       synchronize:
         archive: yes
         compress: yes
-        src: ~/source/helloword
+        src: ~/source/fast-api-test
         dest: ~/deploy/
         rsync_opts:
         - "--exclude=.git"
