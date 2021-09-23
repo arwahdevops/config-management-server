@@ -14,3 +14,4 @@
 
     - name: Deploy APP
       command: cd ~/deploy/fast-api-test && docker-compose up --build -d
+      register: deploy
