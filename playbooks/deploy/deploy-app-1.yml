@@ -11,3 +11,7 @@
         rsync_opts:
         - "--exclude=.git"
       register: sync
+
+    - name: Deploy APP
+      become: true
+      command: cd ~/source/fast-api-test && docker-compose up --build -d
