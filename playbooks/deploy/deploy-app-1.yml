@@ -13,6 +13,6 @@
       register: sync
 
     - name: Deploy APP
-      shell: cd ~/deploy/fast-api-test && docker-compose down
+      shell: cd ~/deploy/fast-api-test && docker-compose up --build -d
       register: out
     - debug: var=out.stdout_lines
