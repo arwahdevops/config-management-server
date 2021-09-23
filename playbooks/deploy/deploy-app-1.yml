@@ -14,4 +14,5 @@
 
     - name: Deploy APP
       shell: cd ~/deploy/fast-api-test && docker-compose up --build -d
-      register: deploy
+      register: out
+    - debug: var=out.stdout_lines
